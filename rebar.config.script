@@ -4,10 +4,10 @@ case erlang:function_exported(rebar3, main, 1) of
     false ->
         [{deps, [
             {granderl, ".*",
-                {git, "https://github.com/tokenrove/granderl.git", {tag, "v0.1.5"}}},
+                {git, "https://github.com/tokenrove/granderl.git", {ref, "baafd1bc825cb1fc022760eae913f774fa6af91b"}}},
             {parse_trans, ".*",
                 {git, "https://github.com/uwiger/parse_trans.git", {tag, "3.0.0"}}},
             {shackle, ".*",
-                {git, "https://github.com/lpgauth/shackle.git", {tag, "0.6.16"}}}
+                {git, "https://github.com/lpgauth/shackle.git", {tag, "0.6.19"}}}
         ]} | lists:keydelete(deps, 1, CONFIG)]
 end.
